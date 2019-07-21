@@ -22,7 +22,7 @@ func init() {
 	flag.StringVar(&accessKey, "accessKey", "", "set accessKey")
 }
 
-// @title  yue-spider API文档
+// @title  yue-spider API
 // @version 1.0
 // @description 淘宝App 闲鱼App 相关Api 调用，仅供测试使用。 点击接口展开可以查看详情，点击"Try it out" 填写参数即可进行接口测试 更多交流 3394772548@qq.com
 // @contact.name API Support
