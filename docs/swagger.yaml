@@ -1,0 +1,168 @@
+basePath: /
+info:
+  contact:
+    email: 3394772548@qq.com
+    name: API Support
+  description: 淘宝App 闲鱼App 相关Api 调用，仅供测试使用。 点击接口展开可以查看详情，点击"Try it out" 填写参数即可进行接口测试
+    更多交流 3394772548@qq.com
+  license: {}
+  title: yue-spider API文档
+  version: "1.0"
+paths:
+  /mtop.taobao.detail.getdesc:
+    get:
+      consumes:
+      - multipart/form-data
+      description: 获取淘宝天猫宝贝详情描述接口
+      parameters:
+      - description: 淘宝商品id
+        in: query
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200": {}
+      summary: 淘宝商品宝贝详情描述接口
+      tags:
+      - 淘宝商品信息
+  /mtop.taobao.detail.getdetail:
+    get:
+      consumes:
+      - multipart/form-data
+      description: 获取淘宝天猫宝贝基本信息接口
+      parameters:
+      - description: 淘宝商品id
+        in: query
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200": {}
+      summary: 淘宝App宝贝基本信息接口
+      tags:
+      - 淘宝商品信息
+  /mtop.taobao.idle.item.detail:
+    get:
+      consumes:
+      - multipart/form-data
+      description: 获取闲鱼宝贝基本信息接口
+      parameters:
+      - description: 闲鱼商品id
+        in: query
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200": {}
+      summary: 闲鱼App宝贝基本信息接口
+      tags:
+      - 闲鱼商品信息
+  /mtop.taobao.idle.main.item.search:
+    get:
+      consumes:
+      - multipart/form-data
+      description: 闲鱼搜索接口
+      parameters:
+      - description: keyword
+        in: query
+        name: keyword
+        required: true
+        type: string
+      - description: 页码(默认1)
+        in: query
+        name: page
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200": {}
+      summary: 闲鱼搜索接口
+      tags:
+      - 闲鱼商品信息
+  /mtop.taobao.rate.detaillist.get:
+    get:
+      consumes:
+      - multipart/form-data
+      description: 获取淘宝天猫宝贝宝贝评论接口
+      parameters:
+      - description: 淘宝商品id
+        in: query
+        name: id
+        required: true
+        type: integer
+      - description: 页码(默认1)
+        in: query
+        name: page
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200": {}
+      summary: 淘宝宝贝评论接口
+      tags:
+      - 淘宝商品信息
+  /mtop.taobao.sharepassword.querypassword:
+    get:
+      consumes:
+      - multipart/form-data
+      description: 淘口令解析
+      parameters:
+      - description: 淘口令
+        in: query
+        name: keyword
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200": {}
+      summary: 淘口令解析
+      tags:
+      - 淘宝客
+  /mtop.taobao.ugc.tql.facade:
+    get:
+      consumes:
+      - multipart/form-data
+      description: 获取淘宝 天猫 宝贝买家秀
+      parameters:
+      - description: 淘宝商品id
+        in: query
+        name: id
+        required: true
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200": {}
+      summary: 淘宝App宝贝买家秀
+      tags:
+      - 淘宝商品信息
+  /mtop.taobao.wsearch.appsearch:
+    get:
+      consumes:
+      - multipart/form-data
+      description: 淘宝搜索接口
+      parameters:
+      - description: keyword
+        in: query
+        name: keyword
+        required: true
+        type: string
+      - description: 页码(默认1)
+        in: query
+        name: page
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200": {}
+      summary: 淘宝App搜索接口
+      tags:
+      - 淘宝商品信息
+swagger: "2.0"
