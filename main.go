@@ -9,13 +9,14 @@ import (
 	"log"
 	"os"
 )
+
 var (
-	h bool
-	port string
+	h         bool
+	port      string
 	accessKey string
 )
 
-func init()  {
+func init() {
 	flag.BoolVar(&h, "h", false, "this help")
 	flag.StringVar(&port, "port", "8080", "set http port")
 	flag.StringVar(&accessKey, "accessKey", "", "set accessKey")
@@ -39,30 +40,30 @@ func main() {
 	gin.SetMode(gin.ReleaseMode)
 	r := gin.New()
 	r.Static("/docs", "./docs")
-	url := ginSwagger.URL("http://localhost:"+port+"/docs/swagger.json") // The url pointing to API definition
+	url := ginSwagger.URL("http://localhost:" + port + "/docs/swagger.json") // The url pointing to API definition
 	r.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerFiles.Handler, url))
 	//宝贝基本信息
-	r.GET("/mtop.taobao.detail.getdetail",MtopTaobaoDetailGetDetail)
+	r.GET("/mtop.taobao.detail.getdetail", MtopTaobaoDetailGetDetail)
 	//宝贝详情
-	r.GET("/mtop.taobao.detail.getdesc",MtopTaobaoDetailGetdesc)
+	r.GET("/mtop.taobao.detail.getdesc", MtopTaobaoDetailGetdesc)
 	//宝贝评价
-	r.GET("/mtop.taobao.rate.detaillist.get",MtopTaobaoRateDetaillistGet)
+	r.GET("/mtop.taobao.rate.detaillist.get", MtopTaobaoRateDetaillistGet)
 	//淘宝搜索
-	r.GET("/mtop.taobao.wsearch.appsearch",MtopTaobaoWsearchAppsearch)
+	r.GET("/mtop.taobao.wsearch.appsearch", MtopTaobaoWsearchAppsearch)
 	//淘宝店铺搜索
 	//r.GET("/mtop.taobao.wsearch.appsearch.shop",MtopTaobaoWsearchAppsearchShop)
 	//淘宝买家秀
-	r.GET("/mtop.taobao.ugc.tql.facade",MtopTaobaoUgcTqlFacade)
+	r.GET("/mtop.taobao.ugc.tql.facade", MtopTaobaoUgcTqlFacade)
 	//闲鱼搜索
-	r.GET("/mtop.taobao.idle.main.item.search",MtopTaobaoIdleMainItemSearch)
+	r.GET("/mtop.taobao.idle.main.item.search", MtopTaobaoIdleMainItemSearch)
 	//闲鱼宝贝基本信息
-	r.GET("/mtop.taobao.idle.item.detail",MtopTaobaoIdleItemDetail)
+	r.GET("/mtop.taobao.idle.item.detail", MtopTaobaoIdleItemDetail)
 	//闲鱼评论
 	//
 	//淘口令解析
-	r.GET("/mtop.taobao.sharepassword.querypassword",MtopTaobaoSharepasswordQuerypassword)
-	log.Println("爬虫系统已启动.API接口地址: http://localhost:"+port+"/swagger/index.html")
-	err := r.Run(":"+port)
+	r.GET("/mtop.taobao.sharepassword.querypassword", MtopTaobaoSharepasswordQuerypassword)
+	log.Println("爬虫系统已启动.API接口文档地址: http://localhost:" + port + "/swagger/index.html")
+	err := r.Run(":" + port)
 	if err != nil {
 		log.Println(err)
 	}
