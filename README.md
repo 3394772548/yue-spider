@@ -15,7 +15,8 @@
 |mtop.taobao.idle.item.detail| 闲鱼宝贝详情|
 |mtop.taobao.sharepassword.querypassword|淘口令解析|
 
-在线测试地址（有请求限流最好大家下载在本地测试）
+[在线测试地址](http://212.64.118.243:8080/swagger/index.html)
+（有请求限流最好大家下载在本地测试）
 
 
 

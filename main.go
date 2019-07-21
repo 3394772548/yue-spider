@@ -40,7 +40,7 @@ func main() {
 	gin.SetMode(gin.ReleaseMode)
 	r := gin.New()
 	r.Static("/docs", "./docs")
-	url := ginSwagger.URL("http://localhost:" + port + "/docs/swagger.json") // The url pointing to API definition
+	url := ginSwagger.URL("/docs/swagger.json") // The url pointing to API definition
 	r.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerFiles.Handler, url))
 	//宝贝基本信息
 	r.GET("/mtop.taobao.detail.getdetail", MtopTaobaoDetailGetDetail)
