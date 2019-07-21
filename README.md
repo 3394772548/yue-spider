@@ -2,7 +2,22 @@
 
 **包含了淘宝app 闲鱼app的爬虫程序 仅供测试使用**
 
-在线demo
+当前可用API，其他API慢慢增加中
+
+| api     | 功能 |
+| --------- | -----:|
+| mtop.taobao.detail.getdetail  | 淘宝商品基本信息 |
+| mtop.taobao.detail.getdesc     |   淘宝商品商品详情 |
+| mtop.taobao.rate.detaillist.get      |  淘宝商品评价   |
+|mtop.taobao.wsearch.appsearch| 淘宝商品搜索 |
+|mtop.taobao.ugc.tql.facade| 淘宝商品买家秀 |
+|mtop.taobao.idle.main.item.search| 闲鱼商品搜索|
+|mtop.taobao.idle.item.detail| 闲鱼宝贝详情|
+|mtop.taobao.sharepassword.querypassword|淘口令解析|
+
+在线测试地址（有请求限流最好大家下载在本地测试）
+
+
 
 下载程序后
 针对所属平台直接运行启动程序
