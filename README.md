@@ -29,11 +29,22 @@
 | mac     |   yue-mac |
 | linux      |    yue-linux |
 
+
 ## 命令行启动
 
 ![](https://user-images.githubusercontent.com/53135265/61588113-808c5480-abc8-11e9-9df4-b802a729cd58.jpg)
 
 ## 服务器启动后，浏览器打开接口文档地址
+
+启动参数
+
+指定启动端口
+
+-port=9090 
+
+设置代理
+
+-proxy=http://127.0.0.1:8888
 
 **接口文档基于swagger-go实现，可以直接在线模拟测试调用 
 http://localhost:8080/swagger/index.html**
