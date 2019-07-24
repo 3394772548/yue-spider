@@ -14,12 +14,14 @@ var (
 	h         bool
 	port      string
 	accessKey string
+	proxyUrl  string
 )
 
 func init() {
 	flag.BoolVar(&h, "h", false, "this help")
 	flag.StringVar(&port, "port", "8080", "set http port")
 	flag.StringVar(&accessKey, "accessKey", "", "set accessKey")
+	flag.StringVar(&proxyUrl, "proxy", "", "set proxy")
 }
 
 // @title  yue-spider API
