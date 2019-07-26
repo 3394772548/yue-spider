@@ -245,6 +245,52 @@
                     "200": {}
                 }
             }
+        },
+        "/mtop.taobao.wsearch.appsearch.shop": {
+            "get": {
+                "description": "淘宝搜索接口 店铺搜索 keyword可以为空",
+                "consumes": [
+                    "multipart/form-data"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "tags": [
+                    "淘宝商品信息"
+                ],
+                "summary": "淘宝App搜索接口 店铺搜索",
+                "parameters": [
+                    {
+                        "type": "integer",
+                        "description": "卖家id",
+                        "name": "sellerId",
+                        "in": "query",
+                        "required": true
+                    },
+                    {
+                        "type": "integer",
+                        "description": "商家id",
+                        "name": "shopId",
+                        "in": "query",
+                        "required": true
+                    },
+                    {
+                        "type": "string",
+                        "description": "keyword",
+                        "name": "keyword",
+                        "in": "query"
+                    },
+                    {
+                        "type": "integer",
+                        "description": "页码(默认1)",
+                        "name": "page",
+                        "in": "query"
+                    }
+                ],
+                "responses": {
+                    "200": {}
+                }
+            }
         }
     }
 }

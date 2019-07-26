@@ -165,4 +165,35 @@ paths:
       summary: 淘宝App搜索接口
       tags:
       - 淘宝商品信息
+  /mtop.taobao.wsearch.appsearch.shop:
+    get:
+      consumes:
+      - multipart/form-data
+      description: 淘宝搜索接口 店铺搜索 keyword可以为空
+      parameters:
+      - description: 卖家id
+        in: query
+        name: sellerId
+        required: true
+        type: integer
+      - description: 商家id
+        in: query
+        name: shopId
+        required: true
+        type: integer
+      - description: keyword
+        in: query
+        name: keyword
+        type: string
+      - description: 页码(默认1)
+        in: query
+        name: page
+        type: integer
+      produces:
+      - application/json
+      responses:
+        "200": {}
+      summary: 淘宝App搜索接口 店铺搜索
+      tags:
+      - 淘宝商品信息
 swagger: "2.0"

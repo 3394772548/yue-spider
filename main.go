@@ -53,7 +53,7 @@ func main() {
 	//淘宝搜索
 	r.GET("/mtop.taobao.wsearch.appsearch", MtopTaobaoWsearchAppsearch)
 	//淘宝店铺搜索
-	//r.GET("/mtop.taobao.wsearch.appsearch.shop",MtopTaobaoWsearchAppsearchShop)
+	r.GET("/mtop.taobao.wsearch.appsearch.shop", MtopTaobaoWsearchAppsearchShop)
 	//淘宝买家秀
 	r.GET("/mtop.taobao.ugc.tql.facade", MtopTaobaoUgcTqlFacade)
 	//闲鱼搜索
