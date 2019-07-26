@@ -10,6 +10,7 @@
 | mtop.taobao.detail.getdesc     |   淘宝商品商品详情 |
 | mtop.taobao.rate.detaillist.get      |  淘宝商品评价   |
 |mtop.taobao.wsearch.appsearch| 淘宝商品搜索 |
+|mtop.taobao.wsearch.appsearch.shop| 淘宝店铺商品搜索 |
 |mtop.taobao.ugc.tql.facade| 淘宝商品买家秀 |
 |mtop.taobao.idle.main.item.search| 闲鱼商品搜索|
 |mtop.taobao.idle.item.detail| 闲鱼宝贝详情|
