@@ -44,6 +44,7 @@ func main() {
 	r.Static("/docs", "./docs")
 	url := ginSwagger.URL("/docs/swagger.json") // The url pointing to API definition
 	r.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerFiles.Handler, url))
+	//r.GET("/set.proxy.url",SetProxyUrl)
 	//宝贝基本信息
 	r.GET("/mtop.taobao.detail.getdetail", MtopTaobaoDetailGetDetail)
 	//宝贝详情

@@ -32,6 +32,12 @@
                         "name": "id",
                         "in": "query",
                         "required": true
+                    },
+                    {
+                        "type": "string",
+                        "description": "自定义代理服务器地址",
+                        "name": "proxyUrl",
+                        "in": "query"
                     }
                 ],
                 "responses": {
@@ -59,6 +65,12 @@
                         "name": "id",
                         "in": "query",
                         "required": true
+                    },
+                    {
+                        "type": "string",
+                        "description": "自定义代理服务器地址",
+                        "name": "proxyUrl",
+                        "in": "query"
                     }
                 ],
                 "responses": {
@@ -86,6 +98,12 @@
                         "name": "id",
                         "in": "query",
                         "required": true
+                    },
+                    {
+                        "type": "string",
+                        "description": "自定义代理服务器地址",
+                        "name": "proxyUrl",
+                        "in": "query"
                     }
                 ],
                 "responses": {
@@ -118,6 +136,12 @@
                         "type": "integer",
                         "description": "页码(默认1)",
                         "name": "page",
+                        "in": "query"
+                    },
+                    {
+                        "type": "string",
+                        "description": "自定义代理服务器地址",
+                        "name": "proxyUrl",
                         "in": "query"
                     }
                 ],
@@ -152,6 +176,12 @@
                         "description": "页码(默认1)",
                         "name": "page",
                         "in": "query"
+                    },
+                    {
+                        "type": "string",
+                        "description": "自定义代理服务器地址",
+                        "name": "proxyUrl",
+                        "in": "query"
                     }
                 ],
                 "responses": {
@@ -179,6 +209,12 @@
                         "name": "keyword",
                         "in": "query",
                         "required": true
+                    },
+                    {
+                        "type": "string",
+                        "description": "自定义代理服务器地址",
+                        "name": "proxyUrl",
+                        "in": "query"
                     }
                 ],
                 "responses": {
@@ -206,6 +242,12 @@
                         "name": "id",
                         "in": "query",
                         "required": true
+                    },
+                    {
+                        "type": "string",
+                        "description": "自定义代理服务器地址",
+                        "name": "proxyUrl",
+                        "in": "query"
                     }
                 ],
                 "responses": {
@@ -238,6 +280,12 @@
                         "type": "integer",
                         "description": "页码(默认1)",
                         "name": "page",
+                        "in": "query"
+                    },
+                    {
+                        "type": "string",
+                        "description": "自定义代理服务器地址",
+                        "name": "proxyUrl",
                         "in": "query"
                     }
                 ],
@@ -284,6 +332,12 @@
                         "type": "integer",
                         "description": "页码(默认1)",
                         "name": "page",
+                        "in": "query"
+                    },
+                    {
+                        "type": "string",
+                        "description": "自定义代理服务器地址",
+                        "name": "proxyUrl",
                         "in": "query"
                     }
                 ],

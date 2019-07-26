@@ -20,6 +20,10 @@ paths:
         name: id
         required: true
         type: integer
+      - description: 自定义代理服务器地址
+        in: query
+        name: proxyUrl
+        type: string
       produces:
       - application/json
       responses:
@@ -38,6 +42,10 @@ paths:
         name: id
         required: true
         type: integer
+      - description: 自定义代理服务器地址
+        in: query
+        name: proxyUrl
+        type: string
       produces:
       - application/json
       responses:
@@ -56,6 +64,10 @@ paths:
         name: id
         required: true
         type: integer
+      - description: 自定义代理服务器地址
+        in: query
+        name: proxyUrl
+        type: string
       produces:
       - application/json
       responses:
@@ -78,6 +90,10 @@ paths:
         in: query
         name: page
         type: integer
+      - description: 自定义代理服务器地址
+        in: query
+        name: proxyUrl
+        type: string
       produces:
       - application/json
       responses:
@@ -100,6 +116,10 @@ paths:
         in: query
         name: page
         type: integer
+      - description: 自定义代理服务器地址
+        in: query
+        name: proxyUrl
+        type: string
       produces:
       - application/json
       responses:
@@ -117,6 +137,10 @@ paths:
         in: query
         name: keyword
         required: true
+        type: string
+      - description: 自定义代理服务器地址
+        in: query
+        name: proxyUrl
         type: string
       produces:
       - application/json
@@ -136,6 +160,10 @@ paths:
         name: id
         required: true
         type: integer
+      - description: 自定义代理服务器地址
+        in: query
+        name: proxyUrl
+        type: string
       produces:
       - application/json
       responses:
@@ -158,6 +186,10 @@ paths:
         in: query
         name: page
         type: integer
+      - description: 自定义代理服务器地址
+        in: query
+        name: proxyUrl
+        type: string
       produces:
       - application/json
       responses:
@@ -189,6 +221,10 @@ paths:
         in: query
         name: page
         type: integer
+      - description: 自定义代理服务器地址
+        in: query
+        name: proxyUrl
+        type: string
       produces:
       - application/json
       responses:
